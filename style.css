@@ -1,76 +1,409 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
     background-color: rgb(35, 42, 120);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.banner{
+a {
+    color: inherit;
+}
+
+.banner {
     display: block;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.3);
-    border-bottom: 0.2px solid rgb(22, 27, 83);
+    width: 100%;
+    background-color: rgb(35, 42, 120);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgb(22, 27, 83);
 }
 
-.download{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 470px;
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.container-botoes{
+.menu-interno {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 20px;
+    background-color: rgb(26, 32, 99);
+}
+
+.menu-interno a {
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-interno a:hover {
+    background-color: rgb(255, 252, 183);
+    color: rgb(26, 32, 99);
+}
+
+.download {
+    color: white;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3.2rem);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 45px 20px 35px;
+}
+
+.titulodownload {
+    margin: 0;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+.slogan {
+    max-width: 900px;
+    margin: 15px auto 30px;
+    color: #fffcb7;
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.botoes{
+.botoes {
+    display: inline-block;
     text-align: center;
-    font-size: 50px;
-    padding: 20px;
+    font-size: clamp(1.1rem, 3.5vw, 3.1rem);
+    padding: 18px 24px;
     border-radius: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: white;
     background-color: rgb(26, 32, 99);
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.cortecentral{
-    height: 700px;
-    width: 1px;
+.botoes:hover {
+    background-color: rgb(255, 252, 183);
+    color: rgb(26, 32, 99);
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: clamp(1.1rem, 2.7vw, 2.5rem);
+    padding: 35px 25px;
+}
+
+.textosobre {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.titulosobre,
+.secao-info h2 {
+    color: #fffcb7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-shadow: 4px 4px 30px rgb(136, 39, 39);
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    text-align: center;
+}
+
+.detalhes-jogo {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(26, 32, 99);
+}
+
+.detalhes-jogo p {
+    margin: 0 0 12px;
+}
+
+.detalhes-jogo p:last-child {
+    margin-bottom: 0;
+}
+
+.cortecentral {
+    height: 760px;
+    width: 3px;
+    border-radius: 20px;
     background-color: white;
     margin: 0 30px;
 }
 
-.titulosobre{
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.screenshot-card {
+    width: min(100%, 656px);
+    margin: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgb(26, 32, 99);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.screenshot-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.screenshot-card p {
+    margin: 0;
+    padding: 10px 15px;
     color: #fffcb7;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 4px 4px 30px rgb(136, 39, 39);
-    font-size: 50px;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
     text-align: center;
 }
 
-.textosobre{
-    text-align: justify;
-    width: 80%;
+.secao-info {
+    padding: 45px 25px;
+    font-size: clamp(1.05rem, 2vw, 1.5rem);
+}
+
+.secao-info > p {
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.cards-info,
+.equipe-grid,
+.politica-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.sobre{
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    color: white;
-    font-size: 40px;
-    padding-top: 20px;
+.cards-info article,
+.membro,
+.politica-grid article {
+    padding: 22px;
+    border-radius: 15px;
+    background-color: rgb(26, 32, 99);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.imagens{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 10px;
+.cards-info h3,
+.membro h3,
+.politica-grid h3 {
+    margin: 12px 0 10px;
+    color: #fffcb7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cards-info p,
+.membro p,
+.politica-grid p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.numero {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: rgb(26, 32, 99);
+    background-color: #fffcb7;
+    font-weight: 700;
+}
+
+.tabela-area {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(26, 32, 99);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+th,
+td {
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: left;
+}
+
+th {
+    color: rgb(26, 32, 99);
+    background-color: #fffcb7;
+}
+
+.equipe-grid {
+    grid-template-columns: repeat(6, minmax(90px, 1fr));
+}
+
+.equipe-grid .membro {
+    grid-column: span 2;
+}
+
+.equipe-grid .membro:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.equipe-grid .membro:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.membro {
+    text-align: center;
+}
+
+.foto-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border: 4px solid #fffcb7;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.foto-equipe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-equipe.sem-foto::before {
+    content: "Foto";
+    color: rgb(26, 32, 99);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.mencao-honrosa {
+    max-width: 720px;
+    margin: 30px auto 0;
+    padding: 24px;
+    border: 2px solid #fffcb7;
+    border-radius: 15px;
+    background-color: rgb(26, 32, 99);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.mencao-honrosa h3 {
+    margin: 0 0 10px;
+    color: #fffcb7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.mencao-honrosa p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.pagina-download {
+    text-align: center;
+}
+
+.politica-grid {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+}
+
+.rodape {
+    padding: 25px 20px;
+    color: white;
+    background-color: rgb(22, 27, 83);
+    text-align: center;
+}
+
+.rodape p {
+    margin: 8px 0;
+}
+
+.rodape a {
+    color: #fffcb7;
+}
+
+@media (max-width: 900px) {
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .cortecentral {
+        width: 90%;
+        height: 1px;
+        margin: 25px auto;
+    }
+
+    .cards-info,
+    .equipe-grid,
+    .politica-grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+
+    .equipe-grid .membro,
+    .equipe-grid .membro:nth-child(4),
+    .equipe-grid .membro:nth-child(5) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-interno {
+        gap: 6px;
+    }
+
+    .menu-interno a {
+        padding: 8px 9px;
+        font-size: 0.9rem;
+    }
+
+    .download,
+    .secao-info,
+    .sobre {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container-botoes,
+    .cards-info,
+    .equipe-grid,
+    .politica-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes {
+        width: 100%;
+        max-width: 320px;
+    }
 }

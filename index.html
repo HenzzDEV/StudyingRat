@@ -1,45 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StudyingRAT</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="banner">
-    <img src="imgs/StudyingRAT BANNER.png" alt="BannerRAT" width="100%" height="100%">
-  </div>
-  <div class="download">
-    <H1 class="titulodownload">Instale AQUI</H1>
-    <div class="container-botoes">
-        <button class="botoes" onclick="window.location.href='https:play.google.com/store/games?hl=pt_BR&pli=1'">PlayStore</button>
-        <a href="imgs/okgoogle.jpg" download="imgs/okgoogle.jpg">
-          <button class="botoes">Download</button>
-        </a>
-        <button class="botoes" onclick="window.location.href='https:www.apple.com/br/app-store/'">AppStore</button>
-    </div>
-  </div>
-  <div class="sobre">
-    <div class="textosobre">
-      <h1 class="titulosobre">O que é StudyingRAT?</h1>
-      <p>
-            StudyingRAT é um jogo educacional desenvolvido 
-            com o objetivo de unir entretenimento e aprendizado. 
-            O jogador assume o papel de um rato que precisa 
-            atravessar diferentes fases repletas de obstáculos 
-            e desafios enquanto foge de predadores, como gatos. 
-            Ao longo da jornada, o jogador deverá utilizar seus 
-            conhecimentos para resolver atividades educativas e 
-            avançar até o final de cada fase.
-      </p>
-    </div>
-     <div class="cortecentral"></div>
-     <div class="imagens">
-          <img src="https://stories.cnnbrasil.com.br/wp-content/uploads/sites/9/2025/07/ratatouille_capa.jpg" alt="" width="656px" height="369px">
-          <img src="https://m.media-amazon.com/images/S/pv-target-images/6203f7e50d91f051fe76c201d79795bdfeb2196b0d57d49f8da043f683d30845.jpg" alt="" width="656px" height="369px">
-          <img src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2018/08/ratatui.jpg" alt="" width="656px" height="369px">
-     </div>
-  </div>
-</body> 
+    <!-- Home: banner, nome do jogo, logo e menu interno -->
+    <header class="banner" id="home">
+        <img src="imgs/StudyingRAT BANNER.png" alt="Banner do jogo StudyingRAT">
+
+        <nav class="menu-interno" aria-label="Menu principal">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#como-jogar">Como jogar</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#pagina-download">Download</a>
+            <a href="#politica">Política</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Chamada para ação -->
+        <section class="download" aria-labelledby="titulo-download">
+            <h1 class="titulodownload" id="titulo-download">Instale AQUI</h1>
+            <p class="slogan">Aprenda, desvie dos gatos e avance fase por fase.</p>
+
+            <div class="container-botoes">
+                <a class="botoes" href="https://play.google.com/store/games?hl=pt_BR&pli=1" target="_blank" rel="noopener">PlayStore</a>
+                <a class="botoes" href="#pagina-download">Download</a>
+                <a class="botoes" href="https://www.apple.com/br/app-store/" target="_blank" rel="noopener">AppStore</a>
+            </div>
+        </section>
+
+        <!-- Sobre o jogo e galeria -->
+        <section class="sobre" id="sobre">
+            <div class="textosobre">
+                <h1 class="titulosobre">O que é StudyingRAT?</h1>
+                <p>
+                    StudyingRAT é um jogo educacional desenvolvido com o objetivo de unir
+                    entretenimento e aprendizado. O jogador assume o papel de um rato que
+                    precisa atravessar diferentes fases repletas de obstáculos e desafios
+                    enquanto foge de predadores, como gatos. Ao longo da jornada, o jogador
+                    deverá utilizar seus conhecimentos para resolver atividades educativas e
+                    avançar até o final de cada fase.
+                </p>
+
+                <div class="detalhes-jogo">
+                    <p><strong>Gênero:</strong> aventura, plataforma e quiz educacional.</p>
+                    <p><strong>Mecânica:</strong> correr, desviar, coletar itens e responder desafios.</p>
+                    <p><strong>História:</strong> um rato estudante procura conhecimento para escapar dos perigos.</p>
+                    <p><strong>Objetivo:</strong> chegar ao fim das fases acumulando pontos e aprendizados.</p>
+                </div>
+            </div>
+
+            <div class="cortecentral"></div>
+
+            <div class="imagens" id="screenshots" aria-label="Capturas de tela do jogo">
+                <article class="screenshot-card">
+                    <img src="https://stories.cnnbrasil.com.br/wp-content/uploads/sites/9/2025/07/ratatouille_capa.jpg" alt="Prévia visual da fase inicial do StudyingRAT">
+                    <p>Fase inicial</p>
+                </article>
+
+                <article class="screenshot-card">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/6203f7e50d91f051fe76c201d79795bdfeb2196b0d57d49f8da043f683d30845.jpg" alt="Prévia visual de desafio educativo do StudyingRAT">
+                    <p>Desafio educativo</p>
+                </article>
+
+                <article class="screenshot-card">
+                    <img src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2018/08/ratatui.jpg" alt="Prévia visual de fase com obstáculos do StudyingRAT">
+                    <p>Obstáculos e pontuação</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Como jogar -->
+        <section class="secao-info" id="como-jogar">
+            <h2>Como jogar</h2>
+
+            <div class="cards-info">
+                <article>
+                    <span class="numero">1</span>
+                    <h3>Movimente o rato</h3>
+                    <p>Use os controles na tela para correr, pular e desviar dos obstáculos.</p>
+                </article>
+
+                <article>
+                    <span class="numero">2</span>
+                    <h3>Fuja dos gatos</h3>
+                    <p>Evite encostar nos predadores para não perder vida durante a fase.</p>
+                </article>
+
+                <article>
+                    <span class="numero">3</span>
+                    <h3>Responda desafios</h3>
+                    <p>Resolva perguntas educativas para liberar caminhos e ganhar pontos.</p>
+                </article>
+
+                <article>
+                    <span class="numero">4</span>
+                    <h3>Complete a fase</h3>
+                    <p>Chegue ao final com a maior pontuação possível e avance para novos níveis.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Requisitos do aparelho -->
+        <section class="secao-info" id="requisitos">
+            <h2>Requisitos</h2>
+
+            <div class="tabela-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Mínimo</th>
+                            <th>Recomendado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sistema operacional</td>
+                            <td>Android 8.0</td>
+                            <td>Android 10 ou superior</td>
+                        </tr>
+                        <tr>
+                            <td>Processador</td>
+                            <td>Quad-core 1.4 GHz</td>
+                            <td>Octa-core 2.0 GHz</td>
+                        </tr>
+                        <tr>
+                            <td>Memória RAM</td>
+                            <td>2 GB</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Armazenamento</td>
+                            <td>200 MB livres</td>
+                            <td>500 MB livres</td>
+                        </tr>
+                        <tr>
+                            <td>Tela</td>
+                            <td>5 polegadas</td>
+                            <td>6 polegadas ou mais</td>
+                        </tr>
+                        <tr>
+                            <td>Conexão</td>
+                            <td>Internet para download</td>
+                            <td>Wi-Fi para atualização</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Equipe de desenvolvimento -->
+        <section class="secao-info" id="equipe">
+            <h2>Equipe de desenvolvimento</h2>
+
+            <div class="equipe-grid">
+                <article class="membro">
+                    <div class="foto-equipe">
+                        <img src="imgs/integrantes/diegao.jpeg" alt="Foto de Diego Henrique" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
+                    </div>
+                    <h3>Diego Henrique</h3>
+                    <p>Web Designer</p>
+                </article>
+
+                <article class="membro">
+                    <div class="foto-equipe">
+                        <img src="imgs/integrantes/vitao.jpeg" alt="Foto de Vitor Gabriel">
+                    </div>
+                    <h3>Vitor Gabriel</h3>
+                    <p>Espectador</p>
+                </article>
+
+                <article class="membro">
+                    <div class="foto-equipe">
+                        <img src="imgs/integrantes/limao.jpeg" alt="Foto de Gabriel Lima">
+                    </div>
+                    <h3>Gabriel Lima</h3>
+                    <p>Documentação técnica</p>
+                </article>
+
+                <article class="membro">
+                    <div class="foto-equipe">
+                        <img src="imgs/integrantes/evellyn.jpeg" alt="Foto de Evellyn Silva" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
+                    </div>
+                    <h3>Evellyn Silva</h3>
+                    <p>Suporte Documentação técnica</p>
+                </article>
+
+                <article class="membro">
+                    <div class="foto-equipe">
+                        <img src="imgs/integrantes/felipe.jpeg" alt="Foto de Felipe Andre" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
+                    </div>
+                    <h3>Felipe Andre</h3>
+                    <p>Desenvolvedor Senior</p>
+                </article>
+            </div>
+
+            <div class="mencao-honrosa">
+                <h3>Menção honrosa</h3>
+                <p>Allex Gustav, criador e artista do banner do StudyingRAT, além de seu enorme apoio emocional aos integrantes.</p>
+            </div>
+        </section>
+
+        <!-- Página de download -->
+        <section class="secao-info pagina-download" id="pagina-download">
+            <h2>Página de download</h2>
+            <p>
+                O jogo StudyingRAT será disponibilizado para Android. Para instalar, baixe o
+                arquivo APK oficial da equipe ou acesse a loja de aplicativos quando a versão
+                final estiver publicada.
+            </p>
+
+            <div class="container-botoes">
+                <a class="botoes" href="#requisitos">Ver requisitos</a>
+                <a class="botoes" href="https://play.google.com/store/games?hl=pt_BR&pli=1" target="_blank" rel="noopener">Abrir loja</a>
+            </div>
+        </section>
+
+        <!-- Política do jogo -->
+        <section class="secao-info" id="politica">
+            <h2>Política do jogo</h2>
+
+            <div class="politica-grid">
+                <article>
+                    <h3>Termos de uso</h3>
+                    <p>
+                        O jogador deve utilizar o StudyingRAT apenas para fins educativos e de
+                        entretenimento. Não é permitido modificar, vender ou distribuir versões
+                        alteradas do jogo sem autorização da equipe.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Privacidade</h3>
+                    <p>
+                        A versão escolar do jogo não coleta dados pessoais sensíveis. Caso exista
+                        registro de nome, apelido ou pontuação, essas informações serão usadas
+                        apenas para progresso e identificação dentro do jogo.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>LGPD e contato</h3>
+                    <p>
+                        Em conformidade com a Lei 13.709/2018, o usuário pode solicitar dúvidas,
+                        correções ou exclusão de dados pelo contato da equipe.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>StudyingRAT | ETEC São Gotardo | Técnico em Informática | 2026</p>
+        <p>
+            Contato: equipe.studyingrat@email.com |
+            <a href="#home">Home</a> |
+            <a href="#politica">Política do jogo</a>
+        </p>
+    </footer>
+</body>
 </html>
