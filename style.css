@@ -53,15 +53,18 @@ a {
     color: rgb(26, 32, 99);
 }
 
-.download {
-    color: white;
+.chamada-jogo {
+    color: #fffcb7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-shadow: 4px 4px 30px rgb(136, 39, 39);
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 3.2rem);
     font-family: Georgia, "Times New Roman", Times, serif;
     padding: 45px 20px 35px;
 }
 
-.titulodownload {
+.titulo-acesso {
     margin: 0;
     font-size: clamp(2.5rem, 7vw, 5rem);
 }
@@ -88,7 +91,7 @@ a {
     border-radius: 15px;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: white;
-    background-color: rgb(26, 32, 99);
+    background-color: rgb(53, 59, 133);
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -97,6 +100,13 @@ a {
 .botoes:hover {
     background-color: rgb(255, 252, 183);
     color: rgb(26, 32, 99);
+}
+
+.botao-desativado,
+.botao-desativado:hover {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgb(76, 82, 151);
+    cursor: default;
 }
 
 .sobre {
@@ -331,7 +341,7 @@ th {
     line-height: 1.5;
 }
 
-.pagina-download {
+.acesso-jogo {
     text-align: center;
 }
 
@@ -388,7 +398,7 @@ th {
         font-size: 0.9rem;
     }
 
-    .download,
+    .chamada-jogo,
     .secao-info,
     .sobre {
         padding-left: 15px;

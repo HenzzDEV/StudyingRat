@@ -14,25 +14,25 @@
         <nav class="menu-interno" aria-label="Menu principal">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre</a>
-            <a href="#screenshots">Screenshots</a>
+            <a href="#screenshots">Imagens</a>
             <a href="#como-jogar">Como jogar</a>
             <a href="#requisitos">Requisitos</a>
             <a href="#equipe">Equipe</a>
-            <a href="#pagina-download">Download</a>
+            <a href="#acesso-jogo">Jogar</a>
             <a href="#politica">Política</a>
         </nav>
     </header>
 
     <main>
-        <!-- Botões DOWNLOAD do jogo -->
-        <section class="download" aria-labelledby="titulo-download">
-            <h1 class="titulodownload" id="titulo-download">Instale AQUI</h1>
+        <!-- Chamada principal do jogo -->
+        <section class="chamada-jogo" aria-labelledby="titulo-acesso">
+            <h1 class="titulo-acesso" id="titulo-acesso">Jogue AQUI</h1>
             <p class="slogan">Aprenda, desvie dos gatos e avance fase por fase.</p>
 
             <div class="container-botoes">
-                <a class="botoes" href="https://play.google.com/store/games?hl=pt_BR&pli=1" target="_blank" rel="noopener">PlayStore</a>
-                <a class="botoes" href="#pagina-download">Download</a>
-                <a class="botoes" href="https://www.apple.com/br/app-store/" target="_blank" rel="noopener">AppStore</a>
+                <span class="botoes botao-desativado" aria-disabled="true">Play Store em breve</span>
+                <a class="botoes" href="https://mouse-chase-learn.preview.emergentagent.com" target="_blank" rel="noopener">Abrir jogo</a>
+                <span class="botoes botao-desativado" aria-disabled="true">App Store em breve</span>
             </div>
         </section>
 
@@ -41,19 +41,18 @@
             <div class="textosobre">
                 <h1 class="titulosobre">O que é StudyingRAT?</h1>
                 <p>
-                    StudyingRAT é um jogo educacional desenvolvido com o objetivo de unir
-                    entretenimento e aprendizado. O jogador assume o papel de um rato que
-                    precisa atravessar diferentes fases repletas de obstáculos e desafios
-                    enquanto foge de predadores, como gatos. Ao longo da jornada, o jogador
-                    deverá utilizar seus conhecimentos para resolver atividades educativas e
-                    avançar até o final de cada fase.
+                    StudyingRAT é um jogo educacional desenvolvido para unir entretenimento
+                    e aprendizado. Nele, o jogador assume o papel de um rato estudante que
+                    atravessa fases com obstáculos, desafios e predadores, como gatos. Ao
+                    longo da jornada, é preciso resolver atividades educativas para avançar
+                    até o final de cada fase.
                 </p>
 
                 <div class="detalhes-jogo">
                     <p><strong>Gênero:</strong> aventura, plataforma e quiz educacional.</p>
-                    <p><strong>Mecânica:</strong> correr, desviar, coletar itens e responder desafios.</p>
-                    <p><strong>História:</strong> um rato estudante procura conhecimento para escapar dos perigos.</p>
-                    <p><strong>Objetivo:</strong> chegar ao fim das fases acumulando pontos e aprendizados.</p>
+                    <p><strong>Mecânicas:</strong> correr, desviar, coletar itens e responder desafios.</p>
+                    <p><strong>História:</strong> um rato estudante busca conhecimento enquanto escapa dos perigos.</p>
+                    <p><strong>Objetivo:</strong> chegar ao fim das fases acumulando pontos e aprendizado.</p>
                 </div>
             </div>
 
@@ -61,17 +60,17 @@
 
             <div class="imagens" id="screenshots" aria-label="Capturas de tela do jogo">
                 <article class="screenshot-card">
-                    <img src="https://stories.cnnbrasil.com.br/wp-content/uploads/sites/9/2025/07/ratatouille_capa.jpg" alt="Prévia visual da fase inicial do StudyingRAT">
-                    <p>Fase inicial</p>
+                    <img src="imgs/Tela inicial.png" alt="Prévia visual da fase inicial do StudyingRAT">
+                    <p>Tela inicial</p>
                 </article>
 
                 <article class="screenshot-card">
-                    <img src="https://m.media-amazon.com/images/S/pv-target-images/6203f7e50d91f051fe76c201d79795bdfeb2196b0d57d49f8da043f683d30845.jpg" alt="Prévia visual de desafio educativo do StudyingRAT">
+                    <img src="imgs/questao.png" alt="Prévia visual de desafio educativo do StudyingRAT">
                     <p>Desafio educativo</p>
                 </article>
 
                 <article class="screenshot-card">
-                    <img src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2018/08/ratatui.jpg" alt="Prévia visual de fase com obstáculos do StudyingRAT">
+                    <img src="imgs/jogo.png" alt="Prévia visual de fase com obstáculos do StudyingRAT">
                     <p>Obstáculos e pontuação</p>
                 </article>
             </div>
@@ -85,7 +84,7 @@
                 <article>
                     <span class="numero">1</span>
                     <h3>Movimente o rato</h3>
-                    <p>Use os controles na tela para correr, pular e desviar dos obstáculos.</p>
+                    <p>Use teclado, mouse ou toque na tela para correr, pular e desviar dos obstáculos.</p>
                 </article>
 
                 <article>
@@ -123,29 +122,34 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Dispositivo</td>
+                            <td>Celular, tablet, notebook ou computador</td>
+                            <td>Dispositivo com navegador atualizado</td>
+                        </tr>
+                        <tr>
                             <td>Sistema operacional</td>
-                            <td>Android 8.0</td>
-                            <td>Android 10 ou superior</td>
+                            <td>Android, iOS, Windows, macOS, Linux ou ChromeOS</td>
+                            <td>Sistema atualizado na versão mais recente disponível</td>
                         </tr>
                         <tr>
-                            <td>Processador</td>
-                            <td>Quad-core 1.4 GHz</td>
-                            <td>Octa-core 2.0 GHz</td>
+                            <td>Navegador</td>
+                            <td>Chrome, Firefox, Edge, Safari ou equivalente</td>
+                            <td>Navegador moderno atualizado com suporte a HTML5</td>
                         </tr>
                         <tr>
-                            <td>Memória RAM</td>
-                            <td>2 GB</td>
-                            <td>4 GB</td>
+                            <td>Tela</td>
+                            <td>Interface adaptável para telas pequenas e grandes</td>
+                            <td>Boa resolução para melhor leitura e jogabilidade</td>
                         </tr>
                         <tr>
-                            <td>Armazenamento</td>
-                            <td>200 MB livres</td>
-                            <td>500 MB livres</td>
+                            <td>Controles</td>
+                            <td>Toque, mouse ou teclado</td>
+                            <td>Toque, mouse e teclado disponíveis</td>
                         </tr>
                         <tr>
                             <td>Conexão</td>
-                            <td>Internet para Download</td>
-                            <td>Wi-Fi para Donwload</td>
+                            <td>Acesso à internet</td>
+                            <td>Conexão estável para melhor desempenho</td>
                         </tr>
                     </tbody>
                 </table>
@@ -159,7 +163,7 @@
             <div class="equipe-grid">
                 <article class="membro">
                     <div class="foto-equipe">
-                        <img src="imgs/integrantes/limao.jpeg" alt="Foto Gabriel">
+                        <img src="imgs/integrantes/limao2.jpeg" alt="Foto Gabriel">
                     </div>
                     <h3>Gabriel Lima</h3>
                     <p>Documentação técnica</p>
@@ -170,15 +174,15 @@
                         <img src="imgs/integrantes/eve.png" alt="Foto Evellyn" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
                     </div>
                     <h3>Evellyn Silva</h3>
-                    <p>Suporte Documentação técnica</p>
+                    <p>Suporte à documentação técnica</p>
                 </article>
 
                 <article class="membro">
                     <div class="foto-equipe">
-                        <img src="imgs/integrantes/vitao2.png" alt="Foto Vitor">
+                        <img src="imgs/integrantes/vitao2certo.jpeg" alt="Foto Vitor">
                     </div>
                     <h3>Vitor Gabriel</h3>
-                    <p>Suporte Geral</p>
+                    <p>Suporte geral</p>
                 </article>
 
                 <article class="membro">
@@ -186,7 +190,7 @@
                         <img src="imgs/integrantes/diegao.jpeg" alt="Foto Diego" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
                     </div>
                     <h3>Diego Henrique</h3>
-                    <p>Web Designer</p>
+                    <p>Web designer</p>
                 </article>
 
                 <article class="membro">
@@ -194,7 +198,7 @@
                         <img src="imgs/integrantes/felipaoinsano.png" alt="Foto Felipe" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
                     </div>
                     <h3>Felipe Andre</h3>
-                    <p>Desenvolvedor Senior</p>
+                    <p>Desenvolvedor sênior</p>
                 </article>
             </div>
 
@@ -204,18 +208,18 @@
             </div>
         </section>
 
-        <!-- DOWNLOAD -->
-        <section class="secao-info pagina-download" id="pagina-download">
-            <h2>Página de download</h2>
+        <!-- Acesso ao jogo -->
+        <section class="secao-info acesso-jogo" id="acesso-jogo">
+            <h2>Onde encontrar nosso Ratinho Estudioso?</h2>
             <p>
-                O jogo StudyingRAT será disponibilizado para Android. Para instalar, baixe o
-                arquivo APK oficial da equipe ou acesse a loja de aplicativos quando a versão
-                final estiver publicada.
+                O StudyingRAT é um jogo web. Para jogar, basta abrir o link oficial em um
+                navegador moderno, seja no celular, tablet, notebook ou computador. As versões
+                para Play Store e App Store podem ser consideradas futuramente.
             </p>
 
             <div class="container-botoes">
+                <a class="botoes" href="#home">Abrir jogo</a>
                 <a class="botoes" href="#requisitos">Ver requisitos</a>
-                <a class="botoes" href="https://play.google.com/store/games?hl=pt_BR&pli=1" target="_blank" rel="noopener">Abrir loja</a>
             </div>
         </section>
 
@@ -236,7 +240,7 @@
                 <article>
                     <h3>Privacidade</h3>
                     <p>
-                        A versão escolar do jogo não coleta dados pessoais sensíveis. Caso exista
+                        A versão web do jogo não coleta dados pessoais sensíveis. Caso exista
                         registro de nome, apelido ou pontuação, essas informações serão usadas
                         apenas para progresso e identificação dentro do jogo.
                     </p>
@@ -245,8 +249,8 @@
                 <article>
                     <h3>LGPD e contato</h3>
                     <p>
-                        Em conformidade com a Lei 13.709/2018, o usuário pode solicitar dúvidas,
-                        correções ou exclusão de dados pelo contato da equipe.
+                        Em conformidade com a Lei 13.709/2018, o usuário pode enviar dúvidas e
+                        solicitar correções ou exclusão de dados pelo contato da equipe.
                     </p>
                 </article>
             </div>
